@@ -14,7 +14,6 @@ def test_listfiles():
 
 
 def test_save_list_csv():
-    #hashes = hashtotable.generate_list_hash('.')
     hashes = ('.\dummydata.txt','3a1852d340332de49b8b9eeb7814ca24a3e499e2')
     newfile = hashtotable.save_list_csv('testtable.csv', hashes)
     assert filecmp.cmp(newfile,'expectedtable.csv'),'Error while listing the hashes' 

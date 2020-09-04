@@ -44,7 +44,6 @@ def save_list_csv(filename, liststring):
 def save_list_doc(filename, liststring):
     """Save the list as a table in a word document"""
     doc = Document()
-    paragraph = doc.add_paragraph('Table of hashes:')
     table = doc.add_table(0, 0)
     table = doc.add_table(rows=0, cols=2)
     table.style = "Table Grid"
